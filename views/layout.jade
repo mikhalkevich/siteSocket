@@ -1,0 +1,48 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Portfolio Item - Start Bootstrap Template
+    // Bootstrap core CSS
+    link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='css/portfolio-item.css', rel='stylesheet')
+    link(href='css/video.css', rel='stylesheet')
+    link(href='css/drag.css', rel='stylesheet')
+  body
+    // Navigation
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      .container
+        a.navbar-brand(href='#') Start Bootstrap
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='#')
+                | Home
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link.menu(data-title='О компании', data-picture='img/abaut.jpg', data-url='abaut', href='#') About
+            li.nav-item
+              a.nav-link.menu(data-title='Услуги', data-picture='img/servises.jpg', data-url='services', href='#') Services
+            li.nav-item
+              a.nav-link(data-title='Контакты', data-picture='img/cont.jpg', data-url='cont', href='/kontakt') Contact
+    block content
+    // Footer
+    footer.py-5.bg-dark
+      .container
+        a(href='/first')Первая ссылка
+        a(href='/two')Вторая ссылка
+        a(href='/thre')Третья ссылка
+      // /.container
+      // Bootstrap core JavaScript
+      script(src='vendor/jquery/jquery.min.js')
+      script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+      script(src='js/main.js')
+      script(src='js/video.js')
+      script(src='js/canvas.js')
+      script(src='js/drags.js')

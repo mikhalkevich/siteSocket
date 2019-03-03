@@ -1,0 +1,48 @@
+extends layout
+
+block content
+    // Page Content
+    .container
+      // Portfolio Item Heading
+      h1#title.my-4=ttext.name
+      // Portfolio Item Row
+      .row
+        section#player
+          video#media(width='700', height='500')
+            source(src='vid/videoplayback.webm')
+          nav
+            #button
+              input#play(value='play', type='button')
+              input#mute(value='mute', type='button')
+            #bar
+              #progress
+            #control
+              input#volume(min='0', max='1', step='0.1', volume='0.6', type='range')
+            .clear
+        #text.col-md-4
+          h3.my-3 Project Description
+          p=ttext.body
+          h3.my-3 Project Details
+          form.form-inline(method = 'post', action = '/form')
+            .form-group 
+              label(for='exampleInputName2' ) Name
+              input#exampleInputName2.form-control(name = 'name', placeholder='Jane Doe', type='text')
+            .form-group
+              label(for='exampleInputEmail2') Email
+              input#exampleInputEmail2.form-control(name = 'email', placeholder='jane.doe@example.com', type='email')
+            button.btn.btn-default(type='submit') Send invitation
+      // /.row
+      // Related Projects Row
+      h3.my-4 Related Projects
+      section#canvasbox
+        canvas#canvas(width='700px', height='300px')  
+      .row
+        section#picturebox
+          img#g1(src='img/g1.jpg')
+          img#g2(src='img/g2.jpg')
+          img#g3(src='img/g3.jpg')
+        section#dropbox
+          | Dropimage here
+        br(style='clear: both')
+      // /.row
+      // /.container

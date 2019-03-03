@@ -1,0 +1,15 @@
+#dropbox {
+	float:right;
+	width: 500px;
+	border: solid 1px black;
+	margin: 10px auto;
+    padding: 10px 5px 5px 5px;
+}
+
+#picturebox {
+	float:left;
+	width: 500px;
+	border: solid 1px black;
+	margin: 10px auto;
+    padding: 10px 5px 5px 5px;
+}
